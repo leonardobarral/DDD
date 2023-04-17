@@ -1,11 +1,25 @@
 package classes;
 
 public class Aluno extends Usuario{
-    private final String ra;
-    Turma turma;
-    public Aluno(String ra, int id, String email, String name, String password, String tel) {
+    private final String ra = "ra";
+    private Turma turma;
+
+
+    public Aluno( int id, String email, String name, String password, String tel, Turma turma) {
         super( id, email, name, password,tel);
-        this.ra = ra;
+        this.turma = turma;
+    }
+
+    public Aluno() {
+        super();
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 
     public void status(){
@@ -15,6 +29,8 @@ public class Aluno extends Usuario{
         System.out.printf("Nome: %s\n",this.getName());
         System.out.printf("Senha: %s\n",this.getPassword());
         System.out.printf("TEL: %s\n",this.getTel());
+        System.out.printf("Turma: %s\n",this.turma.getCodeTurma());
+
 
     }
 
