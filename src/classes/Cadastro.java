@@ -1,8 +1,6 @@
 package classes;
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
+
 public class Cadastro {
 
     public boolean cadastroUsuario(String tipoCadastro){
@@ -29,10 +27,12 @@ public class Cadastro {
 
             System.out.printf("Turma do %s: ",tipoCadastro);
 
+            //aluno.setTurma(new Turma());
 
             var turmaAluno = new Turma();
             turmaAluno.setCodeTurma(sc.nextLine());
             aluno.setTurma(turmaAluno);
+
             turmaAluno.getAlunos().add(aluno);
 
             sc.close();
@@ -59,15 +59,30 @@ public class Cadastro {
             System.out.printf("Telefone do %s: ",tipoCadastro);
             professor.setTel(sc.nextLine());
 
+
+            System.out.printf("Número de turmas do professor %s: ",tipoCadastro);
+            int numTurmas = sc.nextInt();
+            sc.nextLine();
+
+            for (var i = 0; i < numTurmas ;i++){
+                System.out.printf("Turma do %d: ", i+1);
+                var novaturma = new Turma();
+                novaturma.setCodeTurma(sc.nextLine());
+                professor.getTurmas().add(novaturma);
+                novaturma.getProfessores().add(professor);
+
+            }
+
+
+            /**
             System.out.printf("Turma do %s: ",tipoCadastro);
 
 
-            var turmasProfessor = new Turma();
-            turmasProfessor.setCodeTurma(sc.nextLine());
-
-            turmasProfessor.getProfessores().add(professor);
-            professor.getTurmas().add(turmasProfessor);
-
+            var novaturma = new Turma();
+            novaturma.setCodeTurma(sc.nextLine());
+            professor.getTurmas().add(novaturma);
+            novaturma.getProfessores().add(professor);
+            */
             sc.close();
             professor.status();
         }

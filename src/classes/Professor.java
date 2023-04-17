@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Professor extends Usuario{
     private final String rp = "rp";
-    private List<Turma> turmas;
+    private List<Turma> turmas = new ArrayList<>();
 
 
     public Professor(int id, String email, String name, String password, String tel, String rp, List<Turma> turmas) {
@@ -24,7 +24,16 @@ public class Professor extends Usuario{
         System.out.printf("Nome: %s\n",this.getName());
         System.out.printf("Senha: %s\n",this.getPassword());
         System.out.printf("TEL: %s\n",this.getTel());
-        System.out.printf("Turma: %s\n", this.turmas);
+
+        final String[] listaTurmas = {turmas.get(0).getCodeTurma()};
+        turmas.subList(1,turmas.size()).forEach(turma -> listaTurmas[0] += ", "+turma.getCodeTurma());
+
+        System.out.printf("Turmas: %s\n",listaTurmas);
+
+
+        //System.out.println(turmas.stream().map(turma -> + turma.getCodeTurma()).forEach(System.out::print));
+
+        //turmas.stream().map(turma -> "Turma: " + turma.getCodeTurma()).forEach(System.out::println);
 
     }
 

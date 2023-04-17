@@ -29,7 +29,7 @@ public class Aluno extends Usuario{
         System.out.printf("Nome: %s\n",this.getName());
         System.out.printf("Senha: %s\n",this.getPassword());
         System.out.printf("TEL: %s\n",this.getTel());
-        System.out.printf("Turma: %s\n",this.turma.getCodeTurma());
+        System.out.printf("Turma: %s\n",this.getTurma().getCodeTurma());
 
 
     }

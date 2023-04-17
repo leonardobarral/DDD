@@ -6,8 +6,8 @@ import java.util.List;
 public class Turma {
     private String codeTurma;
     private final int capacidadeAlunos =40;
-    private List<Aluno> alunos;
-    private List<Professor> professores;
+    private List<Aluno> alunos = new ArrayList<>();
+    private List<Professor> professores = new ArrayList<>();
 
     public Turma(String codeTurma, List<Aluno> alunos, List<Professor> professores) {
         this.codeTurma = codeTurma;
