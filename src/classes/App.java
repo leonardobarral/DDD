@@ -9,6 +9,7 @@ public class App {
 
         while (!validador) {
 
+
             System.out.println("1 - Aluno\n2 - Professor");
             int opcao = sc.nextInt();
 
