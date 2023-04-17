@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60c61441-5938-4925-895c-f539dabdd8f7" name="Changes" comment="Subindo Porj">
-      <change beforePath="$PROJECT_DIR$/src/Tuma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuma.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Turma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuma.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Aluno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9c4791e2-904a-4b21-ab3c-bcee73ad7ea4" />
+        <option name="url" value="https://github.com/leonardobarral/DDD.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

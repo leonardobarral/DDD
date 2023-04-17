@@ -2,6 +2,7 @@ package classes;
 
 public class Aluno extends Usuario{
     private final String ra;
+    Turma turma;
     public Aluno(String ra, int id, String email, String name, String password, String tel) {
         super( id, email, name, password,tel);
         this.ra = ra;
