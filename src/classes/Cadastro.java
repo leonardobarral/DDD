@@ -27,12 +27,12 @@ public class Cadastro {
 
             System.out.printf("Turma do %s: ",tipoCadastro);
 
-            //aluno.setTurma(new Turma());
 
             var turmaAluno = new Turma();
-            turmaAluno.setCodeTurma(sc.nextLine());
-            aluno.setTurma(turmaAluno);
 
+            turmaAluno.setCodeTurma(sc.nextLine());
+
+            aluno.setTurma(turmaAluno);
             turmaAluno.getAlunos().add(aluno);
 
             sc.close();
@@ -67,7 +67,10 @@ public class Cadastro {
             for (var i = 0; i < numTurmas ;i++){
                 System.out.printf("Turma do %d: ", i+1);
                 var novaturma = new Turma();
+
+
                 novaturma.setCodeTurma(sc.nextLine());
+
                 professor.getTurmas().add(novaturma);
                 novaturma.getProfessores().add(professor);
 

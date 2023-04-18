@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c61441-5938-4925-895c-f539dabdd8f7" name="Changes" comment="Subindo Porj">
+    <list default="true" id="60c61441-5938-4925-895c-f539dabdd8f7" name="Changes" comment="Subindo modificações do projeto.">
+      <change afterPath="$PROJECT_DIR$/src/EMAIL/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EMAIL/app.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Cadastro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Senha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Senha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Turma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Turma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,13 +58,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.EMAIL.app">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="classes.App" />
       <module name="PortalAluno" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EMAIL.app" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EMAIL.app" />
+      <module name="PortalAluno" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EMAIL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EMAIL.app" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.app" />
         <item itemvalue="Application.Home" />
@@ -140,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681754126922</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Subindo modificações do projeto.">
+      <created>1681770064855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681770064855</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,7 +226,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subindo Porj" />
-    <option name="LAST_COMMIT_MESSAGE" value="Subindo Porj" />
+    <MESSAGE value="Subindo modificações do projeto." />
+    <option name="LAST_COMMIT_MESSAGE" value="Subindo modificações do projeto." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
